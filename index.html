@@ -1,156 +1,274 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f0f4f8;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Header */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #333;
-  color: #fff;
-  padding: 15px 30px;
-  flex-wrap: wrap;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Portfolio</title>
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f4f8;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 22px;
-}
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #333;
+      color: #fff;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
 
-.home-icon {
-  font-size: 26px;
-  color: #ffcc00;
-  cursor: pointer;
-  margin-right: 10px;
-}
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
 
-nav {
-  display: flex;
-  gap: 20px;
-}
+    .home-icon {
+      font-size: 26px;
+      color: #ffcc00;
+      cursor: pointer;
+      margin-right: 10px;
+    }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
-}
+    nav {
+      display: flex;
+      gap: 20px;
+    }
 
-nav a:hover {
-  color: #ffcc00;
-}
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
 
-/* Section */
-section {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  background: #fff;
-}
+    nav a:hover {
+      color: #ffcc00;
+    }
 
-/* About */
-#about {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  background: linear-gradient(135deg, #ffecd2, #fcb69f);
-}
+    /* Section */
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      background: #fff;
+    }
 
-#about img {
-  width: 160px;
-  border-radius: 50%;
-}
+    /* About */
+    #about {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    }
 
-/* Skills */
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
-}
+    #about img {
+      width: 160px;
+      border-radius: 50%;
+    }
 
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #fff;
-  padding: 15px;
-  border-radius: 15px;
-}
+    /* Skills */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+    }
 
-/* Projects */
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      padding: 15px;
+      border-radius: 15px;
+    }
 
-.project-item {
-  padding: 15px;
-  border-left: 5px solid #333;
-  border-radius: 8px;
-  background: #f9f9f9;
-}
+    /* Projects */
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
 
-/* Recommendations */
-#recommendations {
-  background: linear-gradient(135deg, #ffe0b2, #ffcc80);
-}
+    .project-item {
+      padding: 15px;
+      border-left: 5px solid #333;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
 
-/* Form */
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0 15px 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
+    /* Recommendations */
+    #recommendations {
+      background: linear-gradient(135deg, #ffe0b2, #ffcc80);
+    }
 
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  background: #333;
-  color: #fff;
-  cursor: pointer;
-}
+    /* Form */
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
 
-/* ============================= */
-/* 📱 Mobile Responsive */
-/* ============================= */
-@media (max-width: 768px) {
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+    }
 
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    /* ============================= */
+    /* 📱 Mobile Responsive */
+    /* ============================= */
+    @media (max-width: 768px) {
 
-  nav {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-  nav a {
-    padding: 8px 0;
-  }
+      nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
 
-  #about {
-    flex-direction: column;
-    text-align: center;
-  }
+      nav a {
+        padding: 8px 0;
+      }
 
-  #about img {
-    margin-bottom: 20px;
-  }
+      #about {
+        flex-direction: column;
+        text-align: center;
+      }
 
-  section {
-    padding: 20px;
-    margin: 20px;
-  }
-}
+      #about img {
+        margin-bottom: 20px;
+      }
+
+      section {
+        padding: 20px;
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header with Home Icon and Navigation -->
+  <header>
+    <div style="display:flex; align-items:center;">
+      <i class="fas fa-home home-icon"></i>
+      <h1>Umesh Mourya</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Project Details</a>
+      <a href="#skills">Skills</a>
+      <a href="#recommendations">Recommendations</a>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <img src="/Photo.jpg" alt="Profile Image">
+    <div class="about-text">
+      <h2>Umesh Mourya</h2>
+      <p>Hello! I am Umesh, a passionate web developer with experience in building interactive and responsive websites.
+        I enjoy learning new technologies and creating projects that solve real-world problems. My goal is to craft web
+        experiences that are both functional and visually appealing.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+        <p>HTML</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="React">
+        <p>React</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Python">
+        <p>Python</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-item">Portfolio Website – A responsive portfolio showcasing my work.</div>
+      <div class="project-item">Todo App – Interactive task management web app with local storage.</div>
+      <div class="project-item">Weather App – Displays real-time weather using API integration.</div>
+    </div>
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div id="recommendation-list">
+      <div class="recommendation-item">Jane Smith: Umesh is an excellent developer!</div>
+      <div class="recommendation-item">Mike Lee: Very creative and hardworking.</div>
+      <div class="recommendation-item">Sarah Khan: Highly recommended for web projects.</div>
+    </div>
+
+    <h3>Add a Recommendation</h3>
+    <input type="text" id="recName" placeholder="Your Name">
+    <textarea id="recText" placeholder="Your Recommendation"></textarea>
+    <button onclick="addRecommendation()">Submit</button>
+  </section>
+
+  <script>
+    function addRecommendation() {
+      const name = document.getElementById('recName').value.trim();
+      const text = document.getElementById('recText').value.trim();
+
+      if (name && text) {
+        const list = document.getElementById('recommendation-list');
+        const newRec = document.createElement('div');
+        newRec.className = 'recommendation-item';
+        newRec.textContent = `${name}: ${text}`;
+        list.appendChild(newRec);
+
+        alert('Thanks,Recommendation submitted successfully!');
+
+        document.getElementById('recName').value = '';
+        document.getElementById('recText').value = '';
+      } else {
+        alert('Please fill in both fields.');
+      }
+    }
+  </script>
+
+</body>
+
+</html>
